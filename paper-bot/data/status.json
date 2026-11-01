@@ -1,0 +1,73 @@
+{
+  "mode": "paper-only",
+  "background": true,
+  "asOf": 1793544976568,
+  "lastAttemptAt": 1793544976564,
+  "lastSuccessAt": 1793544976564,
+  "status": "active",
+  "error": null,
+  "runCount": 1,
+  "gapCount": 0,
+  "maxGapMs": 0,
+  "price": 94.83,
+  "source": "Coinbase Exchange",
+  "equity": 200,
+  "net": 0,
+  "realized": 0,
+  "fees": 0,
+  "cash": 200,
+  "position": null,
+  "decision": "Breakout condition not met.",
+  "signal": {
+    "ready": false,
+    "bar": 1793544600,
+    "checks": [
+      {
+        "name": "Upward trend",
+        "detail": "9-bar EMA above 21-bar EMA",
+        "pass": true
+      },
+      {
+        "name": "Breakout",
+        "detail": "Close above previous six highs",
+        "pass": false
+      },
+      {
+        "name": "Volume",
+        "detail": "0.52× average · requires 1.10×",
+        "pass": false
+      },
+      {
+        "name": "No large chase",
+        "detail": "0.09% six-bar move · maximum 5%",
+        "pass": true
+      },
+      {
+        "name": "Price drift",
+        "detail": "0.24% from close · maximum 1%",
+        "pass": true
+      }
+    ],
+    "reason": "Breakout condition not met."
+  },
+  "buyHoldReference": 200,
+  "buyHoldCostsIncluded": false,
+  "config": {
+    "stake": 20,
+    "stopPct": 5,
+    "targetPct": 4,
+    "feePct": 0.3,
+    "slipPct": 0.3,
+    "networkUsd": 0.02,
+    "reserve": 40,
+    "dailyLoss": 10,
+    "drawdownPct": 8
+  },
+  "history": [
+    {
+      "t": 1793544976462,
+      "v": 200
+    }
+  ],
+  "trades": []
+}
