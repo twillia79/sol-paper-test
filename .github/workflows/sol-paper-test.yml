@@ -1,0 +1,55 @@
+name: SOL background paper test
+
+on:
+  schedule:
+    - cron: '2-59/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      command:
+        description: Paper test command
+        type: choice
+        default: tick
+        options: [tick, start, pause, close, reset]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sol-paper-test
+  cancel-in-progress: false
+
+jobs:
+  observe:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Unpack runner
+        run: python3 -m zipfile -e Phantom_Background_Paper_Runner.zip .
+
+      - name: Update virtual wallet
+        id: paper
+        continue-on-error: true
+        env:
+          PAPER_COMMAND: ${{ inputs.command || 'tick' }}
+        run: python3 paper-bot/fetch_market.py | node paper-bot/observe.mjs
+
+      - name: Save results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add paper-bot/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update virtual SOL paper test [skip ci]'
+            git push
+          fi
+
+      - name: Report observation failure
+        if: steps.paper.outcome == 'failure'
+        run: exit 1
