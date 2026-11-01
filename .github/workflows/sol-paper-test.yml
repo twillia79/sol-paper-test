@@ -2,7 +2,7 @@ name: SOL background paper test
 
 on:
   schedule:
-    - cron: '2-59/5 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       command:
