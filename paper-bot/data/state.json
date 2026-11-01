@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 2,
-  "lastAttemptAt": 1793560500080,
-  "lastSuccessAt": 1793560500080,
+  "runCount": 3,
+  "lastAttemptAt": 1793576278116,
+  "lastSuccessAt": 1793576278116,
   "lastError": null,
-  "gapCount": 1,
-  "maxGapMs": 15523516,
+  "gapCount": 2,
+  "maxGapMs": 15778036,
   "initialPrice": 94.83,
   "market": {
-    "price": 93.73,
-    "quotedAt": 1793560495952,
-    "fetchedAt": 1793560500069,
+    "price": 94.14,
+    "quotedAt": 1793576277007,
+    "fetchedAt": 1793576278105,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1793560200,
+    "bar": 1793575800,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
@@ -29,21 +29,21 @@
       },
       {
         "name": "Volume",
-        "detail": "0.68× average · requires 1.10×",
+        "detail": "0.75× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "-0.71% six-bar move · maximum 5%",
-        "pass": false
+        "detail": "0.17% six-bar move · maximum 5%",
+        "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.10% from close · maximum 1%",
+        "detail": "0.20% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Breakout condition not met."
   },
   "state": {
     "version": 1,
@@ -58,7 +58,7 @@
     "dayStart": 200,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1793560200,
+    "lastBar": 1793575800,
     "cooldownUntil": 0,
     "history": [
       {
@@ -67,6 +67,10 @@
       },
       {
         "t": 1793560500080,
+        "v": 200
+      },
+      {
+        "t": 1793576278116,
         "v": 200
       }
     ],
@@ -82,6 +86,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Upward trend condition not met."
+    "decision": "Breakout condition not met."
   }
 }
