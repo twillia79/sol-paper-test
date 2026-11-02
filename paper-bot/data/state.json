@@ -1,21 +1,21 @@
 {
   "schema": 1,
-  "runCount": 3,
-  "lastAttemptAt": 1793576278116,
-  "lastSuccessAt": 1793576278116,
+  "runCount": 4,
+  "lastAttemptAt": 1793587420910,
+  "lastSuccessAt": 1793587420910,
   "lastError": null,
-  "gapCount": 2,
+  "gapCount": 3,
   "maxGapMs": 15778036,
   "initialPrice": 94.83,
   "market": {
-    "price": 94.14,
-    "quotedAt": 1793576277007,
-    "fetchedAt": 1793576278105,
+    "price": 94.89,
+    "quotedAt": 1793587417914,
+    "fetchedAt": 1793587420897,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1793575800,
+    "bar": 1793586900,
     "checks": [
       {
         "name": "Upward trend",
@@ -29,17 +29,17 @@
       },
       {
         "name": "Volume",
-        "detail": "0.75× average · requires 1.10×",
+        "detail": "0.70× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "0.17% six-bar move · maximum 5%",
-        "pass": true
+        "detail": "-0.02% six-bar move · maximum 5%",
+        "pass": false
       },
       {
         "name": "Price drift",
-        "detail": "0.20% from close · maximum 1%",
+        "detail": "0.01% from close · maximum 1%",
         "pass": true
       }
     ],
@@ -54,11 +54,11 @@
     "fees": 0,
     "enabled": true,
     "halted": "",
-    "day": "2026-11-01",
+    "day": "2026-11-02",
     "dayStart": 200,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1793575800,
+    "lastBar": 1793586900,
     "cooldownUntil": 0,
     "history": [
       {
@@ -71,6 +71,10 @@
       },
       {
         "t": 1793576278116,
+        "v": 200
+      },
+      {
+        "t": 1793587420910,
         "v": 200
       }
     ],
