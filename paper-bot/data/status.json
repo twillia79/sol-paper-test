@@ -1,15 +1,15 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1793672033560,
-  "lastAttemptAt": 1793672033557,
-  "lastSuccessAt": 1793672033557,
+  "asOf": 1793698468387,
+  "lastAttemptAt": 1793698468385,
+  "lastSuccessAt": 1793698468385,
   "status": "active",
   "error": null,
-  "runCount": 7,
-  "gapCount": 6,
+  "runCount": 8,
+  "gapCount": 7,
   "maxGapMs": 36432062,
-  "price": 91.98,
+  "price": 91.92,
   "source": "Coinbase Exchange",
   "equity": 200,
   "net": 0,
@@ -17,15 +17,15 @@
   "fees": 0,
   "cash": 200,
   "position": null,
-  "decision": "Upward trend condition not met.",
+  "decision": "Breakout condition not met.",
   "signal": {
     "ready": false,
-    "bar": 1793671500,
+    "bar": 1793697900,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
@@ -34,23 +34,23 @@
       },
       {
         "name": "Volume",
-        "detail": "1.12× average · requires 1.10×",
-        "pass": true
-      },
-      {
-        "name": "No large chase",
-        "detail": "-0.40% six-bar move · maximum 5%",
+        "detail": "0.38× average · requires 1.10×",
         "pass": false
       },
       {
+        "name": "No large chase",
+        "detail": "0.29% six-bar move · maximum 5%",
+        "pass": true
+      },
+      {
         "name": "Price drift",
-        "detail": "0.11% from close · maximum 1%",
+        "detail": "0.14% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Breakout condition not met."
   },
-  "buyHoldReference": 193.989243910155,
+  "buyHoldReference": 193.8627016766846,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -90,6 +90,10 @@
     },
     {
       "t": 1793672033557,
+      "v": 200
+    },
+    {
+      "t": 1793698468385,
       "v": 200
     }
   ],
