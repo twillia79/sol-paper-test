@@ -1,56 +1,61 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1793813473737,
-  "lastAttemptAt": 1793813473735,
-  "lastSuccessAt": 1793813473735,
+  "asOf": 1793832571066,
+  "lastAttemptAt": 1793832571063,
+  "lastSuccessAt": 1793832571063,
   "status": "active",
   "error": null,
-  "runCount": 13,
-  "gapCount": 12,
+  "runCount": 14,
+  "gapCount": 13,
   "maxGapMs": 36432062,
-  "price": 95.82,
+  "price": 96.08,
   "source": "Coinbase Exchange",
-  "equity": 200,
-  "net": 0,
+  "equity": 199.72071784646064,
+  "net": -0.2792821535393557,
   "realized": 0,
-  "fees": 0,
-  "cash": 200,
-  "position": null,
-  "decision": "Upward trend condition not met.",
+  "fees": 0.08,
+  "cash": 179.92000000000002,
+  "position": {
+    "qty": 0.20753725501264736,
+    "cost": 20.08,
+    "openedAt": 1793832571063,
+    "entryPrice": 96.08
+  },
+  "decision": "Paper entry: volume breakout.",
   "signal": {
-    "ready": false,
-    "bar": 1793813100,
+    "ready": true,
+    "bar": 1793832000,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Volume",
-        "detail": "0.31× average · requires 1.10×",
-        "pass": false
+        "detail": "1.39× average · requires 1.10×",
+        "pass": true
       },
       {
         "name": "No large chase",
-        "detail": "-0.82% six-bar move · maximum 5%",
-        "pass": false
+        "detail": "0.81% six-bar move · maximum 5%",
+        "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.00% from close · maximum 1%",
+        "detail": "0.13% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Entry conditions met."
   },
-  "buyHoldReference": 202.08794685226195,
+  "buyHoldReference": 202.63629653063376,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -115,7 +120,22 @@
     {
       "t": 1793813473735,
       "v": 200
+    },
+    {
+      "t": 1793832571063,
+      "v": 199.72071784646064
     }
   ],
-  "trades": []
+  "trades": [
+    {
+      "t": 1793832571063,
+      "side": "BUY",
+      "qty": 0.20753725501264736,
+      "price": 96.08,
+      "amount": 20.08,
+      "fee": 0.08,
+      "pnl": null,
+      "reason": "Five-minute volume breakout"
+    }
+  ]
 }
