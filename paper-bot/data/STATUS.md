@@ -4,14 +4,14 @@ Status: **active**. No real orders or wallet access.
 
 | Metric | Value |
 | --- | --- |
-| Simulated equity | $199.72 |
-| Net P/L | $-0.28 |
+| Simulated equity | $199.75 |
+| Net P/L | $-0.25 |
 | Realized P/L | $0.00 |
 | Assumed fees paid | $0.08 |
 | Cash | $179.92 |
-| Last successful observation | 2026-11-04T22:49:31.063Z |
-| Last attempt | 2026-11-04T22:49:31.063Z |
-| Observations with a gap over 10 minutes | 13 |
+| Last successful observation | 2026-11-05T02:53:40.553Z |
+| Last attempt | 2026-11-05T02:53:40.553Z |
+| Observations with a gap over 10 minutes | 14 |
 
 Decision: Paper entry: volume breakout.
 
