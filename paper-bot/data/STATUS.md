@@ -9,9 +9,9 @@ Status: **active**. No real orders or wallet access.
 | Realized P/L | $-1.70 |
 | Assumed fees paid | $0.16 |
 | Cash | $198.30 |
-| Last successful observation | 2026-11-08T08:52:43.851Z |
-| Last attempt | 2026-11-08T08:52:43.851Z |
-| Observations with a gap over 10 minutes | 28 |
+| Last successful observation | 2026-11-08T15:37:28.561Z |
+| Last attempt | 2026-11-08T15:37:28.561Z |
+| Observations with a gap over 10 minutes | 29 |
 
 Decision: Breakout condition not met.
 
