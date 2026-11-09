@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 33,
-  "lastAttemptAt": 1794192549817,
-  "lastSuccessAt": 1794192549817,
+  "runCount": 34,
+  "lastAttemptAt": 1794219942920,
+  "lastSuccessAt": 1794219942920,
   "lastError": null,
-  "gapCount": 32,
+  "gapCount": 33,
   "maxGapMs": 36432062,
   "initialPrice": 94.83,
   "market": {
-    "price": 88.02,
-    "quotedAt": 1794192545644,
-    "fetchedAt": 1794192549806,
+    "price": 86.1,
+    "quotedAt": 1794219940005,
+    "fetchedAt": 1794219942907,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1794192000,
+    "bar": 1794219600,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
@@ -29,21 +29,21 @@
       },
       {
         "name": "Volume",
-        "detail": "0.42× average · requires 1.10×",
+        "detail": "0.63× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "0.35% six-bar move · maximum 5%",
-        "pass": true
+        "detail": "-0.59% six-bar move · maximum 5%",
+        "pass": false
       },
       {
         "name": "Price drift",
-        "detail": "0.17% from close · maximum 1%",
+        "detail": "0.09% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Upward trend condition not met."
   },
   "state": {
     "version": 1,
@@ -58,7 +58,7 @@
     "dayStart": 198.29728994116735,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1794192000,
+    "lastBar": 1794219600,
     "cooldownUntil": 1793901877818,
     "history": [
       {
@@ -192,6 +192,10 @@
       {
         "t": 1794192549817,
         "v": 198.29728994116735
+      },
+      {
+        "t": 1794219942920,
+        "v": 198.29728994116735
       }
     ],
     "trades": [
@@ -227,6 +231,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Breakout condition not met."
+    "decision": "Upward trend condition not met."
   }
 }
