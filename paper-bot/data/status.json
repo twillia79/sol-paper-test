@@ -1,15 +1,15 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1794308417295,
-  "lastAttemptAt": 1794308417291,
-  "lastSuccessAt": 1794308417291,
+  "asOf": 1794335624494,
+  "lastAttemptAt": 1794335624492,
+  "lastSuccessAt": 1794335624492,
   "status": "active",
   "error": null,
-  "runCount": 37,
-  "gapCount": 36,
+  "runCount": 38,
+  "gapCount": 37,
   "maxGapMs": 37749126,
-  "price": 84.43,
+  "price": 82.97,
   "source": "Coinbase Exchange",
   "equity": 198.29728994116735,
   "net": -1.7027100588326505,
@@ -17,40 +17,40 @@
   "fees": 0.15535794365446542,
   "cash": 198.29728994116735,
   "position": null,
-  "decision": "Upward trend condition not met.",
+  "decision": "Volume condition not met.",
   "signal": {
     "ready": false,
-    "bar": 1794308100,
+    "bar": 1794335100,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Volume",
-        "detail": "0.19× average · requires 1.10×",
+        "detail": "0.72× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "-0.89% six-bar move · maximum 5%",
-        "pass": false
+        "detail": "0.50% six-bar move · maximum 5%",
+        "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.02% from close · maximum 1%",
+        "detail": "0.34% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Volume condition not met."
   },
-  "buyHoldReference": 178.06601286512708,
+  "buyHoldReference": 174.98681851734685,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -210,6 +210,10 @@
     },
     {
       "t": 1794308417291,
+      "v": 198.29728994116735
+    },
+    {
+      "t": 1794335624492,
       "v": 198.29728994116735
     }
   ],
