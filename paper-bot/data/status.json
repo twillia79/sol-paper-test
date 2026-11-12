@@ -1,18 +1,18 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1794499957227,
-  "lastAttemptAt": 1794499957224,
-  "lastSuccessAt": 1794499957224,
+  "asOf": 1794521674508,
+  "lastAttemptAt": 1794521674506,
+  "lastSuccessAt": 1794521674506,
   "status": "active",
   "error": null,
-  "runCount": 45,
-  "gapCount": 44,
+  "runCount": 46,
+  "gapCount": 45,
   "maxGapMs": 37749126,
-  "price": 82.06,
+  "price": 81.33,
   "source": "Coinbase Exchange",
-  "equity": 198.01800778762797,
-  "net": -1.9819922123720346,
+  "equity": 197.84168407293242,
+  "net": -2.1583159270675765,
   "realized": -1.7027100588326576,
   "fees": 0.23535794365446544,
   "cash": 178.21728994116734,
@@ -24,28 +24,28 @@
   },
   "decision": "Paper entry: volume breakout.",
   "signal": {
-    "ready": true,
-    "bar": 1794499500,
+    "ready": false,
+    "bar": 1794521100,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Volume",
-        "detail": "1.31× average · requires 1.10×",
-        "pass": true
+        "detail": "0.73× average · requires 1.10×",
+        "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "1.45% six-bar move · maximum 5%",
-        "pass": true
+        "detail": "-0.21% six-bar move · maximum 5%",
+        "pass": false
       },
       {
         "name": "Price drift",
@@ -53,9 +53,9 @@
         "pass": true
       }
     ],
-    "reason": "Entry conditions met."
+    "reason": "Upward trend condition not met."
   },
-  "buyHoldReference": 173.06759464304545,
+  "buyHoldReference": 171.52799746915534,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -248,6 +248,10 @@
     {
       "t": 1794499957224,
       "v": 198.01800778762797
+    },
+    {
+      "t": 1794521674506,
+      "v": 197.84168407293242
     }
   ],
   "trades": [
