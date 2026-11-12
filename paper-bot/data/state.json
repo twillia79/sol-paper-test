@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 44,
-  "lastAttemptAt": 1794469055053,
-  "lastSuccessAt": 1794469055053,
+  "runCount": 45,
+  "lastAttemptAt": 1794499957224,
+  "lastSuccessAt": 1794499957224,
   "lastError": null,
-  "gapCount": 43,
+  "gapCount": 44,
   "maxGapMs": 37749126,
   "initialPrice": 94.83,
   "market": {
-    "price": 82.84,
-    "quotedAt": 1794469050708,
-    "fetchedAt": 1794469055038,
+    "price": 82.06,
+    "quotedAt": 1794499955850,
+    "fetchedAt": 1794499957209,
     "source": "Coinbase Exchange"
   },
   "signal": {
-    "ready": false,
-    "bar": 1794468600,
+    "ready": true,
+    "bar": 1794499500,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
@@ -29,36 +29,41 @@
       },
       {
         "name": "Volume",
-        "detail": "0.28× average · requires 1.10×",
-        "pass": false
+        "detail": "1.31× average · requires 1.10×",
+        "pass": true
       },
       {
         "name": "No large chase",
-        "detail": "0.13% six-bar move · maximum 5%",
+        "detail": "1.45% six-bar move · maximum 5%",
         "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.08% from close · maximum 1%",
+        "detail": "0.02% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Entry conditions met."
   },
   "state": {
     "version": 1,
     "createdAt": 1793544976462,
-    "cash": 198.29728994116735,
-    "position": null,
+    "cash": 178.21728994116734,
+    "position": {
+      "qty": 0.2429951189570455,
+      "cost": 20.08,
+      "openedAt": 1794499957224,
+      "entryPrice": 82.06
+    },
     "realized": -1.7027100588326576,
-    "fees": 0.15535794365446542,
+    "fees": 0.23535794365446544,
     "enabled": true,
     "halted": "",
     "day": "2026-11-12",
     "dayStart": 198.29728994116735,
-    "dayEntries": 0,
+    "dayEntries": 1,
     "peak": 200,
-    "lastBar": 1794468600,
+    "lastBar": 1794499500,
     "cooldownUntil": 1793901877818,
     "history": [
       {
@@ -236,6 +241,10 @@
       {
         "t": 1794469055053,
         "v": 198.29728994116735
+      },
+      {
+        "t": 1794499957224,
+        "v": 198.01800778762797
       }
     ],
     "trades": [
@@ -258,6 +267,16 @@
         "fee": 0.07535794365446542,
         "pnl": -1.7027100588326576,
         "reason": "Stop-loss trigger"
+      },
+      {
+        "t": 1794499957224,
+        "side": "BUY",
+        "qty": 0.2429951189570455,
+        "price": 82.06,
+        "amount": 20.08,
+        "fee": 0.08,
+        "pnl": null,
+        "reason": "Five-minute volume breakout"
       }
     ],
     "config": {
@@ -271,6 +290,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Upward trend condition not met."
+    "decision": "Paper entry: volume breakout."
   }
 }
