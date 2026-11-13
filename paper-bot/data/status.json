@@ -1,15 +1,15 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1794563887251,
-  "lastAttemptAt": 1794563887249,
-  "lastSuccessAt": 1794563887249,
+  "asOf": 1794591128804,
+  "lastAttemptAt": 1794591128802,
+  "lastSuccessAt": 1794591128802,
   "status": "active",
   "error": null,
-  "runCount": 48,
-  "gapCount": 47,
+  "runCount": 49,
+  "gapCount": 48,
   "maxGapMs": 37749126,
-  "price": 79.96,
+  "price": 79.94,
   "source": "Coinbase Exchange",
   "equity": 197.51077518370926,
   "net": -2.4892248162907435,
@@ -17,40 +17,40 @@
   "fees": 0.31347274378247525,
   "cash": 197.51077518370926,
   "position": null,
-  "decision": "Ten-minute cooldown after the last exit.",
+  "decision": "Upward trend condition not met.",
   "signal": {
     "ready": false,
-    "bar": 1794563400,
+    "bar": 1794590700,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Volume",
-        "detail": "0.31× average · requires 1.10×",
-        "pass": false
+        "detail": "5.14× average · requires 1.10×",
+        "pass": true
       },
       {
         "name": "No large chase",
-        "detail": "0.35% six-bar move · maximum 5%",
+        "detail": "0.47% six-bar move · maximum 5%",
         "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.01% from close · maximum 1%",
+        "detail": "0.05% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Upward trend condition not met."
   },
-  "buyHoldReference": 168.63861647158072,
+  "buyHoldReference": 168.59643572709058,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -254,6 +254,10 @@
     },
     {
       "t": 1794563887249,
+      "v": 197.51077518370926
+    },
+    {
+      "t": 1794591128802,
       "v": 197.51077518370926
     }
   ],
