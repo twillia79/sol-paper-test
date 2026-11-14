@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 52,
-  "lastAttemptAt": 1794648407528,
-  "lastSuccessAt": 1794648407528,
+  "runCount": 53,
+  "lastAttemptAt": 1794671769564,
+  "lastSuccessAt": 1794671769564,
   "lastError": null,
-  "gapCount": 51,
+  "gapCount": 52,
   "maxGapMs": 37749126,
   "initialPrice": 94.83,
   "market": {
-    "price": 75.51,
-    "quotedAt": 1794648407147,
-    "fetchedAt": 1794648407512,
+    "price": 73.73,
+    "quotedAt": 1794671766078,
+    "fetchedAt": 1794671769546,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1794648000,
+    "bar": 1794671400,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
@@ -29,21 +29,21 @@
       },
       {
         "name": "Volume",
-        "detail": "0.80× average · requires 1.10×",
+        "detail": "0.06× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "0.47% six-bar move · maximum 5%",
+        "detail": "0.46% six-bar move · maximum 5%",
         "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.04% from close · maximum 1%",
+        "detail": "0.01% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Upward trend condition not met."
   },
   "state": {
     "version": 1,
@@ -58,7 +58,7 @@
     "dayStart": 197.51077518370926,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1794648000,
+    "lastBar": 1794671400,
     "cooldownUntil": 1794564487249,
     "history": [
       {
@@ -268,6 +268,10 @@
       {
         "t": 1794648407528,
         "v": 197.51077518370926
+      },
+      {
+        "t": 1794671769564,
+        "v": 197.51077518370926
       }
     ],
     "trades": [
@@ -323,6 +327,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Breakout condition not met."
+    "decision": "Upward trend condition not met."
   }
 }
