@@ -9,10 +9,10 @@ Status: **active**. No real orders or wallet access.
 | Realized P/L | $-2.49 |
 | Assumed fees paid | $0.31 |
 | Cash | $197.51 |
-| Last successful observation | 2026-11-15T19:10:26.045Z |
-| Last attempt | 2026-11-15T19:10:26.045Z |
-| Observations with a gap over 10 minutes | 57 |
+| Last successful observation | 2026-11-15T23:22:47.533Z |
+| Last attempt | 2026-11-15T23:22:47.533Z |
+| Observations with a gap over 10 minutes | 58 |
 
-Decision: Upward trend condition not met.
+Decision: Breakout condition not met.
 
 The scheduler can be late or skip runs. Stops are evaluated at the next observed price; no missed fills are invented. Indicative SOL/USD prices can differ from on-chain swaps. Profitability is unproven.
