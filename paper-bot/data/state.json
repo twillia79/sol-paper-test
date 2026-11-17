@@ -1,21 +1,21 @@
 {
   "schema": 1,
-  "runCount": 63,
-  "lastAttemptAt": 1794884681239,
-  "lastSuccessAt": 1794884681239,
+  "runCount": 64,
+  "lastAttemptAt": 1794915708777,
+  "lastSuccessAt": 1794915708777,
   "lastError": null,
-  "gapCount": 62,
+  "gapCount": 63,
   "maxGapMs": 37749126,
   "initialPrice": 94.83,
   "market": {
-    "price": 71.69,
-    "quotedAt": 1794884678689,
-    "fetchedAt": 1794884681228,
+    "price": 73.39,
+    "quotedAt": 1794915707846,
+    "fetchedAt": 1794915708764,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1794884100,
+    "bar": 1794915300,
     "checks": [
       {
         "name": "Upward trend",
@@ -25,25 +25,25 @@
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": false
-      },
-      {
-        "name": "Volume",
-        "detail": "1.47× average · requires 1.10×",
         "pass": true
       },
       {
+        "name": "Volume",
+        "detail": "0.73× average · requires 1.10×",
+        "pass": false
+      },
+      {
         "name": "No large chase",
-        "detail": "0.17% six-bar move · maximum 5%",
+        "detail": "1.38% six-bar move · maximum 5%",
         "pass": true
       },
       {
         "name": "Price drift",
-        "detail": "0.01% from close · maximum 1%",
+        "detail": "0.07% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Volume condition not met."
   },
   "state": {
     "version": 1,
@@ -58,7 +58,7 @@
     "dayStart": 197.51077518370926,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1794884100,
+    "lastBar": 1794915300,
     "cooldownUntil": 1794564487249,
     "history": [
       {
@@ -312,6 +312,10 @@
       {
         "t": 1794884681239,
         "v": 197.51077518370926
+      },
+      {
+        "t": 1794915708777,
+        "v": 197.51077518370926
       }
     ],
     "trades": [
@@ -367,6 +371,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Breakout condition not met."
+    "decision": "Volume condition not met."
   }
 }
