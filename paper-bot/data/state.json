@@ -1,49 +1,49 @@
 {
   "schema": 1,
-  "runCount": 70,
-  "lastAttemptAt": 1795075223455,
-  "lastSuccessAt": 1795075223455,
+  "runCount": 71,
+  "lastAttemptAt": 1795108457272,
+  "lastSuccessAt": 1795108457272,
   "lastError": null,
-  "gapCount": 69,
+  "gapCount": 70,
   "maxGapMs": 37749126,
   "initialPrice": 94.83,
   "market": {
-    "price": 74.82,
-    "quotedAt": 1795075222560,
-    "fetchedAt": 1795075223443,
+    "price": 72.81,
+    "quotedAt": 1795108455864,
+    "fetchedAt": 1795108457257,
     "source": "Coinbase Exchange"
   },
   "signal": {
-    "ready": true,
-    "bar": 1795074900,
+    "ready": false,
+    "bar": 1795107900,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
         "detail": "Close above previous six highs",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Volume",
-        "detail": "1.28× average · requires 1.10×",
+        "detail": "2.01× average · requires 1.10×",
         "pass": true
       },
       {
         "name": "No large chase",
-        "detail": "0.23% six-bar move · maximum 5%",
-        "pass": true
+        "detail": "-1.16% six-bar move · maximum 5%",
+        "pass": false
       },
       {
         "name": "Price drift",
-        "detail": "0.05% from close · maximum 1%",
+        "detail": "0.21% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Entry conditions met."
+    "reason": "Upward trend condition not met."
   },
   "state": {
     "version": 1,
@@ -63,7 +63,7 @@
     "dayStart": 197.51077518370926,
     "dayEntries": 1,
     "peak": 200,
-    "lastBar": 1795074900,
+    "lastBar": 1795107900,
     "cooldownUntil": 1794564487249,
     "history": [
       {
@@ -345,6 +345,10 @@
       {
         "t": 1795075223455,
         "v": 197.2314930301699
+      },
+      {
+        "t": 1795108457272,
+        "v": 196.6990198562674
       }
     ],
     "trades": [
