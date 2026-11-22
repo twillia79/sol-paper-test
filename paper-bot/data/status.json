@@ -1,15 +1,15 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1795311684864,
-  "lastAttemptAt": 1795311684861,
-  "lastSuccessAt": 1795311684861,
+  "asOf": 1795337422064,
+  "lastAttemptAt": 1795337422061,
+  "lastSuccessAt": 1795337422061,
   "status": "active",
   "error": null,
-  "runCount": 80,
-  "gapCount": 79,
+  "runCount": 81,
+  "gapCount": 80,
   "maxGapMs": 37749126,
-  "price": 70.12,
+  "price": 69.64,
   "source": "Coinbase Exchange",
   "equity": 196.71756369814457,
   "net": -3.2824363018554266,
@@ -17,15 +17,15 @@
   "fees": 0.47156739327425656,
   "cash": 196.71756369814457,
   "position": null,
-  "decision": "Upward trend condition not met.",
+  "decision": "Breakout condition not met.",
   "signal": {
     "ready": false,
-    "bar": 1795311300,
+    "bar": 1795337100,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
@@ -34,23 +34,23 @@
       },
       {
         "name": "Volume",
-        "detail": "1.51× average · requires 1.10×",
-        "pass": true
-      },
-      {
-        "name": "No large chase",
-        "detail": "-0.10% six-bar move · maximum 5%",
+        "detail": "0.16× average · requires 1.10×",
         "pass": false
       },
       {
+        "name": "No large chase",
+        "detail": "0.24% six-bar move · maximum 5%",
+        "pass": true
+      },
+      {
         "name": "Price drift",
-        "detail": "0.00% from close · maximum 1%",
+        "detail": "0.01% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Breakout condition not met."
   },
-  "buyHoldReference": 147.88569018243172,
+  "buyHoldReference": 146.87335231466835,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -382,6 +382,10 @@
     },
     {
       "t": 1795311684861,
+      "v": 196.71756369814457
+    },
+    {
+      "t": 1795337422061,
       "v": 196.71756369814457
     }
   ],
