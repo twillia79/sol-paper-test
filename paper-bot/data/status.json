@@ -1,15 +1,15 @@
 {
   "mode": "paper-only",
   "background": true,
-  "asOf": 1795385041676,
-  "lastAttemptAt": 1795385041674,
-  "lastSuccessAt": 1795385041674,
+  "asOf": 1795401176156,
+  "lastAttemptAt": 1795401176154,
+  "lastSuccessAt": 1795401176154,
   "status": "active",
   "error": null,
-  "runCount": 83,
-  "gapCount": 82,
+  "runCount": 84,
+  "gapCount": 83,
   "maxGapMs": 37749126,
-  "price": 70.24,
+  "price": 70.17,
   "source": "Coinbase Exchange",
   "equity": 196.71756369814457,
   "net": -3.2824363018554266,
@@ -17,15 +17,15 @@
   "fees": 0.47156739327425656,
   "cash": 196.71756369814457,
   "position": null,
-  "decision": "Breakout condition not met.",
+  "decision": "Upward trend condition not met.",
   "signal": {
     "ready": false,
-    "bar": 1795384500,
+    "bar": 1795400700,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
@@ -34,23 +34,23 @@
       },
       {
         "name": "Volume",
-        "detail": "1.57× average · requires 1.10×",
+        "detail": "1.58× average · requires 1.10×",
         "pass": true
       },
       {
         "name": "No large chase",
-        "detail": "0.13% six-bar move · maximum 5%",
-        "pass": true
+        "detail": "-0.24% six-bar move · maximum 5%",
+        "pass": false
       },
       {
         "name": "Price drift",
-        "detail": "0.17% from close · maximum 1%",
+        "detail": "0.04% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Upward trend condition not met."
   },
-  "buyHoldReference": 148.13877464937255,
+  "buyHoldReference": 147.99114204365708,
   "buyHoldCostsIncluded": false,
   "config": {
     "stake": 20,
@@ -394,6 +394,10 @@
     },
     {
       "t": 1795385041674,
+      "v": 196.71756369814457
+    },
+    {
+      "t": 1795401176154,
       "v": 196.71756369814457
     }
   ],
