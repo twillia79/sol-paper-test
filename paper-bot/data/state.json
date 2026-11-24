@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 86,
-  "lastAttemptAt": 1795473355010,
-  "lastSuccessAt": 1795473355010,
+  "runCount": 87,
+  "lastAttemptAt": 1795501269749,
+  "lastSuccessAt": 1795501269749,
   "lastError": null,
-  "gapCount": 85,
+  "gapCount": 86,
   "maxGapMs": 41230647,
   "initialPrice": 94.83,
   "market": {
-    "price": 72,
-    "quotedAt": 1795473353259,
-    "fetchedAt": 1795473354999,
+    "price": 71.62,
+    "quotedAt": 1795501266497,
+    "fetchedAt": 1795501269735,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1795473000,
+    "bar": 1795500900,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": false
+        "pass": true
       },
       {
         "name": "Breakout",
@@ -29,21 +29,21 @@
       },
       {
         "name": "Volume",
-        "detail": "0.20× average · requires 1.10×",
+        "detail": "0.27× average · requires 1.10×",
         "pass": false
       },
       {
         "name": "No large chase",
-        "detail": "-0.08% six-bar move · maximum 5%",
+        "detail": "-0.32% six-bar move · maximum 5%",
         "pass": false
       },
       {
         "name": "Price drift",
-        "detail": "0.22% from close · maximum 1%",
+        "detail": "0.15% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Upward trend condition not met."
+    "reason": "Breakout condition not met."
   },
   "state": {
     "version": 1,
@@ -54,11 +54,11 @@
     "fees": 0.47156739327425656,
     "enabled": true,
     "halted": "",
-    "day": "2026-11-23",
+    "day": "2026-11-24",
     "dayStart": 196.71756369814457,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1795473000,
+    "lastBar": 1795500900,
     "cooldownUntil": 1795131949729,
     "history": [
       {
@@ -404,6 +404,10 @@
       {
         "t": 1795473355010,
         "v": 196.71756369814457
+      },
+      {
+        "t": 1795501269749,
+        "v": 196.71756369814457
       }
     ],
     "trades": [
@@ -479,6 +483,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Upward trend condition not met."
+    "decision": "Breakout condition not met."
   }
 }
