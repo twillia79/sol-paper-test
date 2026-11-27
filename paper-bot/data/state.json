@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "runCount": 95,
-  "lastAttemptAt": 1795748855786,
-  "lastSuccessAt": 1795748855786,
+  "runCount": 96,
+  "lastAttemptAt": 1795781060625,
+  "lastSuccessAt": 1795781060625,
   "lastError": null,
-  "gapCount": 94,
+  "gapCount": 95,
   "maxGapMs": 41794167,
   "initialPrice": 94.83,
   "market": {
-    "price": 72.64,
-    "quotedAt": 1795748854277,
-    "fetchedAt": 1795748855772,
+    "price": 73.01,
+    "quotedAt": 1795781058524,
+    "fetchedAt": 1795781060608,
     "source": "Coinbase Exchange"
   },
   "signal": {
     "ready": false,
-    "bar": 1795748400,
+    "bar": 1795780500,
     "checks": [
       {
         "name": "Upward trend",
         "detail": "9-bar EMA above 21-bar EMA",
-        "pass": true
+        "pass": false
       },
       {
         "name": "Breakout",
@@ -29,8 +29,8 @@
       },
       {
         "name": "Volume",
-        "detail": "0.99× average · requires 1.10×",
-        "pass": false
+        "detail": "1.23× average · requires 1.10×",
+        "pass": true
       },
       {
         "name": "No large chase",
@@ -39,11 +39,11 @@
       },
       {
         "name": "Price drift",
-        "detail": "0.04% from close · maximum 1%",
+        "detail": "0.08% from close · maximum 1%",
         "pass": true
       }
     ],
-    "reason": "Breakout condition not met."
+    "reason": "Upward trend condition not met."
   },
   "state": {
     "version": 1,
@@ -58,7 +58,7 @@
     "dayStart": 196.71756369814457,
     "dayEntries": 0,
     "peak": 200,
-    "lastBar": 1795748400,
+    "lastBar": 1795780500,
     "cooldownUntil": 1795131949729,
     "history": [
       {
@@ -440,6 +440,10 @@
       {
         "t": 1795748855786,
         "v": 196.71756369814457
+      },
+      {
+        "t": 1795781060625,
+        "v": 196.71756369814457
       }
     ],
     "trades": [
@@ -515,6 +519,6 @@
       "dailyLoss": 10,
       "drawdownPct": 8
     },
-    "decision": "Breakout condition not met."
+    "decision": "Upward trend condition not met."
   }
 }
